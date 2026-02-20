@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        :root {
+            --nav-bg: #1f2a36;
+            --panel: rgba(255, 255, 255, 0.95);
+            --border: #d8dfe6;
+            --accent: #2a6f97;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(244, 246, 248, 0.9), rgba(244, 246, 248, 0.9)),
+                url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1800&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #222;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 12px 16px;
+            background: var(--nav-bg);
+            color: #fff;
+            border-bottom: 2px solid #2f3f52;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        main {
+            padding: 20px 16px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #153147;
+        }
+
+        .box {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        .member {
+            background: #f9fbfd;
+            border: 1px solid #d8dfe6;
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        .role {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: #d9ebf7;
+            color: #13445f;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <strong>TravelBloom</strong>
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <h1>About Us</h1>
+
+        <section class="box">
+            <p>
+                Welcome to our company. We are a team of people who love travel and want to help customers find
+                good destinations. Our mission is to give a simple and useful travel recommendation experience.
+            </p>
+        </section>
+
+        <section class="box">
+            <h2>Our Team</h2>
+            <div class="team">
+                <article class="member">
+                    <h3>John Doe</h3>
+                    <p>Responsible for strategy and company direction.</p>
+                    <span class="role">CEO</span>
+                </article>
+                <article class="member">
+                    <h3>Celina Thomas</h3>
+                    <p>Responsible for team operations and project planning.</p>
+                    <span class="role">Team Lead</span>
+                </article>
+                <article class="member">
+                    <h3>Mike Tysen</h3>
+                    <p>Responsible for service delivery and execution.</p>
+                    <span class="role">Delivery Head</span>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
